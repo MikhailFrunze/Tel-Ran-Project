@@ -1,0 +1,104 @@
+.sales_form_block {
+    background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+    position: absolute;
+    width: 100%;
+    height: 476px;
+    left: 0px;
+    top: 1384px;
+    margin-top: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnome {
+    width: 422px;
+    height: 422px;
+    margin-left: 91px;
+    margin-top: 27px;
+}
+
+.sales_form h1 {
+    width: 575px;
+    height: 1px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 80%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+    margin-top: 44px;
+    margin-right: 152px;
+}
+
+.sales_form p{
+    width: 575px;
+    height: 1px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 96px;
+    margin-top: 44px;
+    margin-right: 152px;
+}
+
+.error{
+    color: #FFFFFF;
+   font-size: 25px;
+    position: absolute;
+    align-self: flex-end;
+    left: 1262px
+}
+
+.sales_form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 473px;
+    gap: 30.52px
+}
+
+.form input {
+    width: 473px;
+    height: 75.44px;
+    border-radius: 25.1468px;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.form ::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #6C6C6C;
+
+}
+
+.form button {
+    width: 480px;
+    height: 75.44px;
+    border-radius: 25.1468px;
+    border: 2.39494px solid #FFFFFF;
+    background: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.7392px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    cursor: pointer;
+}

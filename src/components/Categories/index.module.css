@@ -1,0 +1,42 @@
+.categories_group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    width: 97%;
+    height: 393px;
+    left: 30px;
+    top: 910px;
+    gap: 32px;
+    right: 30px
+}
+
+.categories_header {
+    display: flex;
+    margin-left: 20px;
+    gap: 26px;
+    align-items: center;
+}
+
+.categories_header h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.categories_header button {
+    width: 120px;
+    height: 30.97px;
+    border: 2px solid #8B8B8B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #8B8B8B;
+    background-color: white;
+}

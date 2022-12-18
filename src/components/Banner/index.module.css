@@ -1,10 +1,45 @@
 .banner_section {
-    background-color: #A1E2EB;
-  }
-  
-  .banner_sub_section {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1380px;
-    margin: 0 auto;
-  }
+  background-color: #A1E2EB;
+  display: flex;
+  margin-top: 100px;
+}
+
+.banner_sub_section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1380px;
+  margin: 100px auto auto auto;
+  flex-direction: column;
+}
+
+.banner_sub_section p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 0%;
+  color: #FFFFFF;
+}
+
+.banner_sub_section button {
+  padding: 25px 40px;
+  width: 235px;
+  height: 82px;
+  margin-right: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 13px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+}
+
+.btn_first{
+  background: #FFFFFF;
+}
+
+.btn_second{
+  background-color: #A1E2EB;
+  color: #FFFFFF;
+}

@@ -16,7 +16,7 @@ export default function NavBar() {
         <ul>Купон</ul>
         <ul>Акции</ul>
         <ul>Контакты</ul>
-        <ul><img src={vector} alt="add to cart image" /></ul>
+        <ul><img src={vector} alt="add to cart" /></ul>
       </li>
     </nav>
   )

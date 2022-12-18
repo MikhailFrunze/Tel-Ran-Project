@@ -9,11 +9,11 @@ export default function Banner() {
             <p>Распродажа</p>
             <p>в честь нового сезона</p>
         <div>
-            <div>Все акции</div>
-            <div>Подробнее</div>
+            <button className={s.btn_first}>Все акции</button>
+            <button className={s.btn_second}>Подробнее</button>
         </div>
         </div>
-        <img src={banner} alt="" />
+        <img className={s.banner_img} src={banner} alt="" />
     </div>
   )
 }

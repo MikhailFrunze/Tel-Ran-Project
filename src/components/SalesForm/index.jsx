@@ -11,9 +11,19 @@ export default function SalesForm() {
 
     const submit = data => console.log(data);
 
+    const numberRegex = /^\d+$/;
+
     const phoneRegister = register('phone', {
-        required: '* The field "phone" is required'
+        required: '* The field "phone" is required',
+        pattern: {
+            value: numberRegex,
+            message: '* Not valid number format'
+        }
     });
+
+    
+
+
 
     return (
         <div className={s.sales_form_block}>
@@ -24,7 +34,7 @@ export default function SalesForm() {
                 <h1>Скидка 5%</h1>
                 <p>на первый заказ</p>
                 <form onSubmit={handleSubmit(submit)} className={s.form} >
-                    <input type="tel" name='phone' placeholder='+7' {...phoneRegister} />
+                    <input className={s.form_input} type="tel" name='phone' placeholder='+7' {...phoneRegister} />
                     <button>Получить скидку</button>
                 </form>
             </div>

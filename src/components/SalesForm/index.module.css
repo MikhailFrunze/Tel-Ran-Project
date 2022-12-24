@@ -32,7 +32,7 @@
     margin-right: 152px;
 }
 
-.sales_form p{
+.sales_form p {
     width: 575px;
     height: 1px;
     font-family: 'Montserrat';
@@ -47,9 +47,9 @@
     margin-right: 152px;
 }
 
-.error{
+.error {
     color: #FFFFFF;
-   font-size: 25px;
+    font-size: 25px;
     position: absolute;
     align-self: flex-end;
     left: 1262px
@@ -61,11 +61,16 @@
 }
 
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 473px;
-    gap: 30.52px
+    gap: 30.52px;
+}
+
+.form_input{
+    font-size: xx-large;
+
 }
 
 .form input {

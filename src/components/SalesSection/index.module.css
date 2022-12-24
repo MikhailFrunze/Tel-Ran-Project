@@ -1,0 +1,22 @@
+.sales {
+    position: absolute;
+    left: 30px;
+    top: 1909px;
+    margin-top: 69px;
+}
+
+.sales_header h1{
+    width: 148px;
+    height: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.sales_group {
+    display: flex;
+    gap: 40px;
+}

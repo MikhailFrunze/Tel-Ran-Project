@@ -1,0 +1,22 @@
+.categories_section {
+    margin-top: 91px;
+    margin-left: 33px;
+}
+
+.categories_section h1 {
+    width: 240px;
+    height: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 101px;
+    width: 103%;
+}

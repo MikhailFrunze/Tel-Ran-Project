@@ -1,0 +1,15 @@
+.category_card {
+    width: 318px;
+    height: 350px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.category_card img {
+    margin-bottom: 20px;
+}
+

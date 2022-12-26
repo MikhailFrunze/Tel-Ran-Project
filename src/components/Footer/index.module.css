@@ -1,5 +1,5 @@
 .footer {
-    width: 96%;
+    width: 97%;
     height: 275px;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 110%;
+    line-height: 100%;
 }
 
 

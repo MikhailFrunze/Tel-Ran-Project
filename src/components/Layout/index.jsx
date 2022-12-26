@@ -11,7 +11,6 @@ export default function Layout() {
             <main className={s.main_content}>
                 <Outlet />
             </main>
-            <Footer></Footer>
         </div>
     )
 }

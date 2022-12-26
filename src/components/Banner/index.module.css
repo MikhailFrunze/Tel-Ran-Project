@@ -2,6 +2,8 @@
   background-color: #A1E2EB;
   display: flex;
   margin-top: 100px;
+  margin-left: -7px;
+  margin-right: -8px;
 }
 
 .banner_sub_section {

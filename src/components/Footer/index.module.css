@@ -1,0 +1,92 @@
+.footer {
+    width: 96%;
+    height: 275px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+}
+
+.social_media {
+    display: flex;
+    gap: 65px;
+    width: 196px;
+    height: 77px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    
+}
+
+.social_media a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 110%;
+}
+
+
+.contacts h1 {
+    width: 209px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.contacts p {
+    width: 600px;
+    height: 91px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 130%;
+}
+
+.address h1 {
+    width: 138px;
+    height: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.address h2 {
+    width: 536px;
+    height: 104px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.address h3 {
+    width: 141px;
+    height: 23px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.address h4 {
+    width: 193px;
+    height: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+}

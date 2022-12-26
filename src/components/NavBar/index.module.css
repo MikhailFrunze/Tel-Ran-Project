@@ -45,6 +45,10 @@
     font-weight: 700;
 }
 
+ul img{
+    margin-top: -5px;
+}
+
 .categories {
     color: #339933;
 }

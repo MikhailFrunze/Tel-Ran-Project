@@ -9,7 +9,11 @@
     letter-spacing: 0.03em;
 }
 
+.category_link {
+    text-decoration: none;
+    color: black;
+}
+
 .category_card img {
     margin-bottom: 20px;
 }
-

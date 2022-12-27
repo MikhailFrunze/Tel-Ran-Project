@@ -27,7 +27,7 @@ export default function CategoriesPage() {
                 <h1>Категории</h1>
 
                 <div className={s.categories}>
-                    {categories.map(el => <MainCategoriesCard key={el.id} {...el} />)}
+                    {categories.map(el => <MainCategoriesCard key={el.id} {...el} category={el.id}/>)}
                 </div>
 
                 <Footer />

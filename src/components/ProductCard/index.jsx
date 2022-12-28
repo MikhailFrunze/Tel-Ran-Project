@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function ProductCard({ id, title, price, discont_price, description, categoryId }) {
+export default function ProductCard({ id, title, price, discont_price, description, category }) {
 
-    const redirect = `../categories_page/${categoryId}`
+    const redirect = `../products/${category}`
     return (
         <div>
             <p>{price}</p>

@@ -55,5 +55,66 @@ export const main_categories_group = [
         id: 8,
         img: statues,
         category_title: 'Садовые фигуры'
+    },
+
+    {
+        id: 9,
+        img: fertilizer,
+        category_title: 'Удобрения'
+    },
+
+    {
+        id: 10,
+        img: protection,
+        category_title: 'Средства Защиты и септики'
+    },
+
+    {
+        id: 11,
+        img: material,
+        category_title: 'Посадочный материал'
+    },
+
+    {
+        id: 12,
+        img: instruments,
+        category_title: 'Инструменты и Инвентарь'
+    },
+
+    {
+        id: 13,
+        img: house_products,
+        category_title: 'Товары для дома'
+    },
+
+    {
+        id: 14,
+        img: pots,
+        category_title: 'Горшки и кашпо'
+    },
+
+
+    {
+        id: 15,
+        img: room_plants,
+        category_title: 'Для комнатных растений'
+    },
+
+    {
+        id: 16,
+        img: statues,
+        category_title: 'Садовые фигуры'
+    },
+
+    {
+        id: 17,
+        img: room_plants,
+        category_title: 'Для комнатных растений'
+    },
+
+    {
+        id: 18,
+        img: statues,
+        category_title: 'Садовые фигуры'
     }
 ]

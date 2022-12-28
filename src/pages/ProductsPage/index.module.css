@@ -1,4 +1,24 @@
-.products{
+.products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.category_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-bottom: 81px;
+
+}
+
+.products_page {
+    margin-top: 91px;
+    margin-left: 30px;
+}
+
+.products_page Footer{
+    margin-top: 56px;
 }

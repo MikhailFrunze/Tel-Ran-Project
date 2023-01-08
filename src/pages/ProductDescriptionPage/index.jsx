@@ -19,20 +19,31 @@ export default function ProductDescriptionPage() {
 
     let get_sales_percentage = product.map((el) => {
 
-        return (((el.price - el.discont_price) / el.price) * 100) / 100;
+        return (((el.price - el.discont_price) / el.price) * 100);
     })
 
     return (
         <div className={s.product_description}>
             <div>
-                {product.map((el) => (<div key={el.id}>{el.title}</div>))}
-                <img src={img} alt="product" />
+                {product.map((el) => (<div className={s.title} key={el.id}>{el.title}</div>))}
+                <img className={s.image} src={img} alt="product" />
             </div>
 
-            <div>
-                <p>{product.map((el) => (<div key={el.id}>{el.discont_price}</div>))}</p>
-                <p>{product.map((el) => (<div key={el.id}>{el.price}</div>))}</p>
-                <p>{get_sales_percentage} %</p>
+            <div className={s.product_details}>
+                <div className={s.prices}>
+                    <h1>{product.map((el) => (<div key={el.id}>{el.discont_price}</div>))}</h1>
+                    <h2>{product.map((el) => (<div key={el.id}>{el.price}</div>))}</h2>
+                    <p>{get_sales_percentage} %</p>
+                </div>
+
+                <button>В корзину</button>
+
+                <div className={s.border}></div>
+                
+                <div className={s.description}>
+                    <h1>Описание</h1>
+                    <p>{product.map((el) => (<div key={el.id}>{el.description}</div>))}</p>
+                </div>
             </div>
         </div>
     )

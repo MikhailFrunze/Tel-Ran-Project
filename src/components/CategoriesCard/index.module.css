@@ -13,5 +13,9 @@
 .categories_card p {
     margin-top: 20px;
     align-self: center;
-    
+}
+
+.categories {
+    text-decoration: none;
+    color: black;
 }

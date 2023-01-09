@@ -1,11 +1,17 @@
-import React from 'react'
-import s from './index.module.css'
+import React from 'react';
+import s from './index.module.css';
+import { Link } from 'react-router-dom';
 
-export default function CategoriesCard({img, title}) {
+export default function CategoriesCard({ id, img, title }) {
+
+  const redirect = `../categories_page/${id}`;
+
   return (
-    <div className={s.categories_card}>
+    <Link className={s.categories} to={redirect}>
+      <div className={s.categories_card}>
         <img src={img} alt="" />
         <p>{title}</p>
-    </div>
+      </div>
+    </Link>
   )
 }

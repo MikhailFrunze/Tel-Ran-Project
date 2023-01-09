@@ -30,7 +30,10 @@
 .product_details {
     margin-top: 144px;
     max-width: 425px;
-    
+}
+
+.product_details button {
+    cursor: pointer;
 }
 
 .title {
@@ -107,4 +110,9 @@
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0.03em;
+}
+
+.footer{
+    margin-top: 30px;
+    margin-left: 29px;
 }

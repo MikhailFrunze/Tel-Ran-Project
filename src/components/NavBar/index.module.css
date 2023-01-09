@@ -45,6 +45,11 @@
     font-weight: 700;
 }
 
+.contact{
+    text-decoration: none;
+    color: black;
+}
+
 ul img{
     margin-top: -5px;
 }

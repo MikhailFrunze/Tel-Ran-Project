@@ -12,13 +12,12 @@ export default function ProductDescriptionPage() {
 
     const [product, setProduct] = useState([]);
 
-    const { id, title, price, discont_price } = useParams();
+    const { id } = useParams();
 
     useEffect(() => {
         load_product(id, setProduct);
     }, [])
 
-    console.log(product);
 
     let get_sales_percentage = product.map((el) => {
 
@@ -27,14 +26,24 @@ export default function ProductDescriptionPage() {
 
     const dispatch = useDispatch();
 
-    const add_to_cart = () => dispatch(addToCart({id, title, price, discont_price}))
+
+    let title = product.map((el) => { return el.title});
+    let price = product.map((el) => { return el.price});
+    let discont_price = product.map((el) => { return el.discont_price});
+
+    const add_to_cart = () => dispatch(addToCart({title, price, discont_price, image}))
+
+    
+    let image = product.map((el) => { return el.image});
+
+let src_img = `http://localhost:3333${image}`
 
     return (
         <div>
             <div className={s.product_description}>
                 <div>
                     {product.map((el) => (<div className={s.title} key={el.id}>{el.title}</div>))}
-                    <img className={s.image} src={img} alt="product" />
+                    <img className={s.image} src={src_img} alt="product" />
                 </div>
 
                 <div className={s.product_details}>

@@ -1,0 +1,51 @@
+.rectangle {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    gap: 29px;
+}
+
+.right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.title {
+    width: 295px;
+    height: 46px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+}
+
+.discont_price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-decoration-line: line-through;
+    color: #8B8B8B;
+}
+
+.image {
+    width: 192.6px;
+    height: 166.64px;
+    border-radius: 12.6792px;
+}

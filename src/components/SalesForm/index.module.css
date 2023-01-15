@@ -68,9 +68,8 @@
     gap: 30.52px;
 }
 
-.form_input{
+.form_input {
     font-size: xx-large;
-
 }
 
 .form input {
@@ -89,7 +88,6 @@
     line-height: 120%;
     letter-spacing: 0.03em;
     color: #6C6C6C;
-
 }
 
 .form button {

@@ -3,7 +3,7 @@ import CategoriesPage from '../../pages/CategoriesPage';
 import HomePage from '../../pages/HomePage';
 import ProductsPage from '../../pages/ProductsPage';
 import Layout from '../Layout';
-import NotFoundPage from '../../pages/NotFoundPage'
+import NotFoundPage from '../../pages/NotFoundPage';
 import ProductDescriptionPage from '../../pages/ProductDescriptionPage';
 import CartPage from '../../pages/CartPage';
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import s from './index.module.css'
+import React from 'react';
+import s from './index.module.css';
 
 export default function SalesCard({ img, id, discounted_price, price, discount, title }) {
     return (

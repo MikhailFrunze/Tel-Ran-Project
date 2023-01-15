@@ -9,7 +9,7 @@ export default function CategoriesCard({ id, img, title }) {
   return (
     <Link className={s.categories} to={redirect}>
       <div className={s.categories_card}>
-        <img src={img} alt="" />
+        <img src={img} alt="category" />
         <p>{title}</p>
       </div>
     </Link>

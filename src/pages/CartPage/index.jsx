@@ -4,7 +4,7 @@ import { RightOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import s from './index.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart } from '../../store/reducer/cartReducer'
+import { useForm } from 'react-hook-form';
 import CartCard from '../../components/CartCard';
 
 
@@ -13,29 +13,68 @@ export default function CartPage() {
   const state = useSelector(state => state.cart);
   const dispatch = useDispatch();
 
-  console.log(state);
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    mode: 'onBlur'
+  });
+
+  const submit = data => console.log(data);
+
+  const numberRegex = /^\d+$/;
+
+  const phoneRegister = register('phone', {
+    required: '* The field "phone" is required',
+    pattern: {
+      value: numberRegex,
+      message: '* Not valid number format'
+    }
+  });
+
   return (
     <div className={s.cart_page}>
 
       <div className={s.cart}>
-        <p>Корзина</p>
+        <p>Cart</p>
       </div>
-      <div>
-        <div className={s.cart_header}>
-          <p>Главная / Корзина</p>
-          <Link to='/'>Вернуться в магазин <RightOutlined className={s.arrow} /> </Link>
+
+      <div className={s.cart_section}>
+        <div>
+          <div className={s.cart_header}>
+            <p>Main / Cart</p>
+            <Link to='/'>Back to shop <RightOutlined className={s.arrow} /> </Link>
+          </div>
+
+          <div className={s.cart_card}>
+            {
+              state.map(el => <CartCard key={el.id} {...el} />)
+            }
+          </div>
         </div>
 
-        <div>
-          {
-            state.map(el => <CartCard key={el.id} {...el} />)
-          }
+        <div className={s.cart_summary}>
+          <h1>Order details</h1>
+
+          <div className={s.sum}>
+            <h2>Sum</h2>
+            <p>{
+              state.reduce((prev, { count, price }) => prev + price * count, 0)
+            }</p>
+          </div>
+
+          <form onSubmit={handleSubmit(submit)} className={s.form}>
+            <input className={s.form_input} type="tel" name='phone' placeholder='Your telephone number' {...phoneRegister} />
+            <button>Order</button>
+          </form>
         </div>
-        <div><h1>Детали заказа</h1></div>
+
+        <div className={s.error}>
+          {errors.phone && <p>{errors.phone?.message}</p>}
+        </div>
       </div>
+
       <div>
         <Footer />
       </div>
+
     </div>
   )
 }

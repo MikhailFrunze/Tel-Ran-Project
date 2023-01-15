@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.logo_block{
+.logo_block {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@
     line-height: 130%;
 }
 
-.nav_block{
+.nav_block {
     display: grid;
     grid-template-columns: repeat(5, auto);
     width: 430px;
@@ -45,12 +45,12 @@
     font-weight: 700;
 }
 
-.contact{
+.contact {
     text-decoration: none;
     color: black;
 }
 
-ul img{
+ul img {
     margin-top: -5px;
 }
 
@@ -59,30 +59,22 @@ ul img{
     text-decoration: none;
 }
 
-
-
 .nav_bar button {
     box-sizing: border-box;
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 5px;
-
     position: absolute;
     width: 129px;
     height: 49px;
     left: 157px;
     top: 30px;
-
     background: #339933;
     padding: 15px 30px;
-
     border: 2px solid #339933;
     border-radius: 5px;
-
-
-
+    cursor: pointer;
 }
 
 .nav_bar button p {

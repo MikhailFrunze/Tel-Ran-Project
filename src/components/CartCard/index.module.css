@@ -1,5 +1,10 @@
+.cart_card {
+    margin-bottom: 50px;
+}
+
 .rectangle {
     display: flex;
+    margin-top: 40px;
 }
 
 .left {
@@ -14,15 +19,18 @@
 }
 
 .title {
-    width: 295px;
-    height: 46px;
+    width: 395px;
+    height: 116px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
     letter-spacing: 0.03em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
 
 .price {
     font-family: 'Montserrat';
@@ -48,4 +56,36 @@
     width: 192.6px;
     height: 166.64px;
     border-radius: 12.6792px;
+}
+
+.bar {
+    color: #A7A7A7;
+    background-color: #A7A7A7;
+    width: 820px;
+}
+
+.buttons {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+
+.buttons button {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.cross {
+    cursor: pointer;
+    margin-left: 585px;
+    margin-top: -14px;
+    position: absolute;
 }

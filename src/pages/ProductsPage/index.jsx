@@ -1,38 +1,29 @@
-import React, { useState, useEffect } from 'react'
-import Footer from '../../components/Footer'
+import React, { useEffect } from 'react';
+import Footer from '../../components/Footer';
 import { useSelector } from 'react-redux';
-import { load_products } from '../../store/requests/products';
+import { load_products } from '../../requests/products';
 import { useDispatch } from 'react-redux';
 import ProductCard from '../../components/ProductCard';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import s from './index.module.css';
-import { load_categories } from '../../store/requests/categories';
 
 
 export default function ProductsPage() {
-
-  const [products, setProducts] = useState([]);
-
-  const { category } = useParams();
-
-  useEffect(() => {
-    load_products(category, setProducts);
-  }, [])
-
 
   const dispatch = useDispatch();
 
   const categories = useSelector(state => state.categories);
 
+  const products = useSelector(state => state.products);
+
+  const { category } = useParams();
+
   useEffect(() => {
-    dispatch(load_categories)
-  }, [])
+    dispatch(load_products(category))
+  }, []);
 
 
-  let category_title = categories.map((el) => {
-    return el.id === products[category].categoryId &&
-      el.title
-  })
+  let category_title = categories[category - 1].title;
 
   return (
 

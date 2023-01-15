@@ -8,8 +8,8 @@ export default function Categories() {
     return (
         <div className={s.categories}>
             <div className={s.categories_header}>
-                <h1>Категории</h1>
-                <Link to='/categories_page'><button>Все категории</button></Link>
+                <h1>Categories</h1>
+                <Link to='/categories_page'><button>All categories</button></Link>
             </div>
 
             <div className={s.categories_group}>

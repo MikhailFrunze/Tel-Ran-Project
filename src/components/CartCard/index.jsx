@@ -31,8 +31,8 @@ export default function CartCard({ id, title, price, discont_price, image, count
         </div>
 
         <div className={s.right}>
-          <div className={s.price}>{price}</div>
-          <div className={s.discont_price}>{discont_price}</div>
+          <div className={s.price}>{discont_price}</div>
+          <div className={s.discont_price}>{price}</div>
         </div>
       </div>
     </div>

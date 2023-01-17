@@ -24,8 +24,8 @@ export default function ProductCard({ id, title, price, discont_price, image, ca
                 <Link to={redirect}><img src={src_img} alt="product" /></Link>
             </div>
             <div className={s.prices}>
-                <h1>{price}</h1>
-                <h2>{discont_price}</h2>
+                <h1>{discont_price}</h1>
+                <h2>{price}</h2>
                 <p>{get_sales_percentage}%</p>
             </div>
             <Link className={s.product_title} to={redirect}>

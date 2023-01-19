@@ -22,7 +22,6 @@ export default function ProductsPage() {
     dispatch(load_products(category))
   }, []);
 
-
   let category_title = categories[category - 1].title;
 
   return (

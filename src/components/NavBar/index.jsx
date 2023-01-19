@@ -16,7 +16,7 @@ export default function NavBar() {
         <Link className={s.categories} to='/categories_page'><ul>Categories</ul></Link>
         <ul>Discount</ul>
         <ul>Promos</ul>
-        <ul><a className={s.contact} href='#'>Contact</a></ul>
+        <ul><a className={s.contact} href='#footer'>Contact</a></ul>
         <Link to='cart'><ul><img src={vector} alt="add to cart" /></ul></Link>
       </li>
     </nav>

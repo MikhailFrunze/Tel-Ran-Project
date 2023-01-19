@@ -22,12 +22,13 @@ export default function ProductDescriptionPage() {
         return Math.round(((el.price - el.discont_price) / el.price) * 100);
     });
 
-    let title = product.map((el) => { return el.title });
-    let price = product.map((el) => { return el.price });
-    let discont_price = product.map((el) => { return el.discont_price });
-    let description = product.map((el) => { return el.description });
+    let product_id = product.map((el) => el.id);
+    let title = product.map((el) => el.title);
+    let price = product.map((el) => el.price);
+    let discont_price = product.map((el) => el.discont_price);
+    let description = product.map((el) => el.description);
 
-    const add_to_cart = () => dispatch(addToCart({ id, title, price, discont_price, image }));
+    const add_to_cart = () => dispatch(addToCart({ product_id, title, price, discont_price, image }));
 
     let image = product.map((el) => { return el.image });
 

@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 
 export default function Footer() {
     return (
-        <footer className={s.footer}>
+        <footer className={s.footer} id='footer'>
             <div className={s.contacts}>
                 <h1>Contacts</h1>
                 <p>+1 999 999 99 99</p>

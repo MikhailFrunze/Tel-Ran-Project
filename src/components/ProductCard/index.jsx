@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import s from './index.module.css';
 import { addToCart } from '../../store/reducer/cartReducer';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-export default function ProductCard({ id, title, price, discont_price, image, category }) {
+export default function ProductCard({ title, price, discont_price, image, category, categoryId }) {
 
     const redirect = `../products/${category}`;
 
@@ -14,7 +14,7 @@ export default function ProductCard({ id, title, price, discont_price, image, ca
 
     const dispatch = useDispatch();
 
-    const add_to_cart = () => dispatch(addToCart({ id, title, price, discont_price, image }));
+    const add_to_cart = () => dispatch(addToCart({ categoryId, title, price, discont_price, image }));
 
 
     return (

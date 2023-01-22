@@ -37,7 +37,7 @@
     color: #FF32A1;
 }
 
-.product_card img {
+.img {
     width: 319px;
     height: 276px;
 }
@@ -65,8 +65,7 @@
 
 .button {
     position: absolute;
-    margin-top: 187px;
-    margin-left: 20px;
+    bottom: 32px;
     width: 279px;
     height: 72px;
     border: 2px solid #339933;
@@ -89,4 +88,6 @@
 .image {
     display: flex;
     flex-direction: column;
+    position: relative;
+    align-items: center;
 }

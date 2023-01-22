@@ -21,7 +21,7 @@ export default function ProductCard({ title, price, discont_price, image, catego
         <div className={s.product_card}>
             <div className={s.image}>
                 <button className={s.button} onClick={add_to_cart}>Add to cart</button>
-                <Link to={redirect}><img src={src_img} alt="product" /></Link>
+                <Link to={redirect}><img className={s.img} src={src_img} alt="product" /></Link>
             </div>
             <div className={s.prices}>
                 <h1>{discont_price}</h1>

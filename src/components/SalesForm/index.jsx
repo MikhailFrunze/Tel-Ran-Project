@@ -5,11 +5,16 @@ import { useForm } from 'react-hook-form';
 
 export default function SalesForm() {
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const form = document.querySelector('.form');
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         mode: 'onBlur'
     });
 
-    const submit = data => console.log(data);
+    const submit = data => {
+        console.log(data);
+        reset();
+    };
 
     const numberRegex = /^\d+$/;
 
@@ -21,8 +26,10 @@ export default function SalesForm() {
         }
     });
 
+
+
     return (
-        <div className={s.sales_form_block}>
+        <div className={s.sales_form_block} id='sales'>
             <div className={s.gnome}>
                 <img src={gnome} alt="gnome" />
             </div>
@@ -30,7 +37,7 @@ export default function SalesForm() {
                 <h1>5% sale</h1>
                 <p>on your first order</p>
                 <form onSubmit={handleSubmit(submit)} className={s.form} >
-                    <input className={s.form_input} type="tel" name='phone' placeholder='+7' {...phoneRegister} />
+                    <input className={s.form_input} type="tel" name='phone' placeholder='+1' {...phoneRegister} />
                     <button>Get discount</button>
                 </form>
             </div>

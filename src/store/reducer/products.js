@@ -14,7 +14,7 @@ export const productsReducer = (state = defaultState, action) => {
     } else if (action.type === SORT_PRODUCTS) {
         if (state.length === 0) return state
         if (action.payload === 'default') {
-            return state
+            return state;
         } else if (typeof state[0][action.payload] === 'string') {
             state.sort((a, b) => a[action.payload].localeCompare(b[action.payload]))
         } else {
@@ -24,7 +24,7 @@ export const productsReducer = (state = defaultState, action) => {
     } else if (action.type === SEARCH_PRICE) {
         const { min_value, max_value } = action.payload;
         return state.map(el => {
-            if (el.price >= min_value && el.price <= max_value) {
+            if (el.discont_price >= min_value && el.discont_price <= max_value) {
                 el.hide_mark = false
             } else {
                 el.hide_mark = true

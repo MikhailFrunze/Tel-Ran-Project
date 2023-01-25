@@ -12,7 +12,7 @@ export default function Footer() {
                 <p>+1 999 999 99 99</p>
                 <div className={s.social_media}>
                     <a href="#"><WhatsAppOutlined className={s.icon} />WhatsApp</a>
-                    <a href="#"><Icon className={s.icon} icon="logos:instagram-icon" />instagram</a>
+                    <a href="https://www.instagram.com/"><Icon className={s.icon} icon="logos:instagram-icon" />instagram</a>
                 </div>
             </div>
             <div className={s.address}>

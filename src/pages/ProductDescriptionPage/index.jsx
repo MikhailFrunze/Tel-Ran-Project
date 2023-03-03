@@ -28,7 +28,7 @@ export default function ProductDescriptionPage() {
     let discont_price = product.map((el) => el.discont_price);
     let description = product.map((el) => el.description);
 
-    const add_to_cart = () => dispatch(addToCart({ product_id, title, price, discont_price, image }));
+    const add_to_cart = () => dispatch(addToCart({ id, title, price, discont_price, image }));
 
     let image = product.map((el) => { return el.image });
 

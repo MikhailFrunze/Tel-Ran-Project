@@ -6,6 +6,8 @@ import s from './index.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import CartCard from '../../components/CartCard';
+import { order_products } from '../../requests/products';
+import { clearCart } from '../../store/reducer/cartReducer';
 
 
 export default function CartPage() {
@@ -17,7 +19,11 @@ export default function CartPage() {
     mode: 'onBlur'
   });
 
-  const submit = data => console.log(data);
+  const submit = ({data}) => {
+    dispatch(order_products({data}))
+  };
+
+  console.log(state);
 
   const numberRegex = /^\d+$/;
 
@@ -43,6 +49,8 @@ export default function CartPage() {
             <Link to='/'>Back to shop <RightOutlined className={s.arrow} /> </Link>
           </div>
 
+          <button className={s.clear_cart} onClick={() => dispatch(clearCart())}>Clear cart</button>
+          
           <div className={s.cart_card}>
             {
               state.map(el => <CartCard key={el.id} {...el} />)

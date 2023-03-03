@@ -4,11 +4,13 @@ const ADD_TO_CART = 'ADD_TO_CART';
 const DECREMENT_COUNT = 'DECREMENT_COUNT';
 const INCREMENT_COUNT = 'INCREMENT_COUNT';
 const DELETE_PRODUCT = 'DELETE_PRODUCT';
+const CLEAR_CART = 'CLEAR_CART';
 
 export const addToCart = (payload) => ({ type: ADD_TO_CART, payload });
 export const decrementCount = (payload) => ({ type: DECREMENT_COUNT, payload });
 export const incrementCount = (payload) => ({ type: INCREMENT_COUNT, payload });
 export const deleteProduct = (payload) => ({ type: DELETE_PRODUCT, payload });
+export const clearCart = () => ({ type: CLEAR_CART });
 
 const checkProduct = (state, payload) => {
     const productInState = state.find(el => el.id === payload.id);
@@ -46,6 +48,8 @@ export const cartReducer = (state = defaultState, action) => {
         return incrementQuantity(state, action.payload)
     } else if (action.type === DELETE_PRODUCT) {
         return [...state.filter(el => el.id !== action.payload)]
+    } else if (action.type === CLEAR_CART) {
+        return defaultState
     } else {
         return state
     }

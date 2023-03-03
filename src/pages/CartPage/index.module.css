@@ -142,3 +142,12 @@
     line-height: 130%;
     letter-spacing: 0.03em;
 }
+
+.clear_cart {
+    font-size: 20px;
+    border: 2px solid #000000;
+    border-radius: 21px;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+}

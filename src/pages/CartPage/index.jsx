@@ -15,12 +15,13 @@ export default function CartPage() {
   const state = useSelector(state => state.cart);
   const dispatch = useDispatch();
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({
     mode: 'onBlur'
   });
 
   const submit = ({data}) => {
-    dispatch(order_products({data}))
+    dispatch(order_products({data}));
+    reset();
   };
 
   console.log(state);

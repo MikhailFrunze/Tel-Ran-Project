@@ -2,17 +2,21 @@ import React from 'react';
 import s from './index.module.css';
 import gnome from '../../media/gnome.png';
 import { useForm } from 'react-hook-form';
+import { order_sale } from '../../requests/sale';
+import {useDispatch} from 'react-redux';
 
 export default function SalesForm() {
 
     const form = document.querySelector('.form');
+
+    const dispatch = useDispatch();
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         mode: 'onBlur'
     });
 
     const submit = data => {
-        console.log(data);
+        dispatch(order_sale({data}));
         reset();
     };
 
@@ -25,8 +29,6 @@ export default function SalesForm() {
             message: '* Not valid number format'
         }
     });
-
-
 
     return (
         <div className={s.sales_form_block} id='sales'>
